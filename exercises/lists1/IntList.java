@@ -11,7 +11,7 @@ public class IntList {
 	public int size() {
 		if (rest == null) return 1;
 		return 1 + rest.size();
-		return 0;
+		
 	}
 
 	/** Return the size of the list using no recursion! */
@@ -23,7 +23,7 @@ public class IntList {
 			p = p.rest;
 		}
 		return res;
-		return 0;
+		
 	}
 
 	/** Returns the ith value in this list.*/
