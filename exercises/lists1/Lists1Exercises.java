@@ -4,7 +4,7 @@ public class Lists1Exercises {
       * to change. */
     public static IntList incrList(IntList L, int x) {
         /* Your code here. */
-        if (L.rest == null) return;
+        if (L == null) return;
         else return new IntList(L.first + x,incrList(L.rest,x));
         return L;        
     }
