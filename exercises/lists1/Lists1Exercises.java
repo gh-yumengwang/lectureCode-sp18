@@ -4,6 +4,8 @@ public class Lists1Exercises {
       * to change. */
     public static IntList incrList(IntList L, int x) {
         /* Your code here. */
+        if (L.rest == null) return;
+        else return new IntList(L.first + x,incrList(L.rest,x));
         return L;        
     }
 
@@ -12,6 +14,9 @@ public class Lists1Exercises {
       * the 'new' keyword. */
     public static IntList dincrList(IntList L, int x) {
         /* Your code here. */
+        if (L.rest == null) return;
+        L.first += 3;
+        return dincrList(L.rest,x);
         return L;
     }
 
